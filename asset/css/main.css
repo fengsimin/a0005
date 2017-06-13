@@ -1,0 +1,140 @@
+*,
+:before,
+:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: border-box
+}
+
+html {
+	font-size: 100%
+}
+
+html,
+body {
+	height: 100%;
+	overflow: hidden
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto
+}
+
+.logo {
+	display: block;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	z-index: 999
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.arrow-right,
+.arrow-left {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 80px;
+	width: 80px;
+	background: url(../img/arrows.png) no-repeat;
+	background-position: 0 -95px;
+	background-color: #000;
+	z-index: 999
+}
+
+.arrow-left {
+	background-position: -5px -5px
+}
+
+.swiper-pagination {
+	display: none;
+	position: absolute;
+	left: 40px;
+	top: 50%;
+	z-index: 999
+}
+
+.swiper-pagination span {
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background: #555;
+	margin: 0 0 65px;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.swiper-pagination span:nth-child(1) {
+	background: #8058bd
+}
+
+.swiper-pagination span:nth-child(2) {
+	background: #ea5163
+}
+
+.swiper-pagination span:nth-child(3) {
+	background: #f79240
+}
+
+.swiper-pagination span:nth-child(4) {
+	background: #e8fa4e
+}
+
+.swiper-pagination span:nth-child(5) {
+	background: #2a99d8
+}
+
+.swiper-pagination span:nth-child(6) {
+	background: #58db4b
+}
+
+.swiper-pagination span:nth-child(6) {
+	background: #57db4a
+}
+
+.swiper-pagination span:nth-child(7) {
+	background: #ec06df
+}
+
+.swiper-pagination span:after {
+	position: absolute;
+	content: '';
+	height: 40px;
+	width: 5px;
+	background: #fff;
+	top: 33px;
+	left: 6.5px
+}
+
+.swiper-pagination span:last-child:after {
+	display: none
+}
+
+.swiper-pagination-bullet-active {
+	box-shadow: 0 0 0 5px #fff
+}
+
+.swiper-slide a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center
+}
